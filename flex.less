@@ -1,0 +1,27 @@
+@import 'src/line-align';
+@import 'src/direction';
+@import 'src/justify';
+@import 'src/align';
+@import 'src/wrap';
+@import 'src/self';
+
+
+.flex(@f) { .wrap(@f); }
+.flex(@f) { .direction(@f); }
+
+.flex(@f) when (@f = less) { display: flex; }
+.flex(@f) when (@f = line) { display: inline-flex; }
+
+.flex(@f) when (@f = center) {
+  .line-align(center);
+  .justify(center);
+  .align(center);
+}
+
+.flex(@f) when (@f = grow) { flex-grow: 1; }
+.flex(@f) when (@f = no-grow) { flex-grow: 0; }
+.flex(@f) when (@f = shrink) { flex-shrink: 1; }
+.flex(@f) when (@f = no-shrink) { flex-shrink: 0; }
+
+.flex(@f) when (@f = baseline) or (@f = stretch) { .align(@f); }
+.flex(@f) when (@f = between) or (@f = around) { .justify(@f); }

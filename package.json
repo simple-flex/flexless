@@ -1,0 +1,19 @@
+{
+  "name": "flexless",
+  "version": "1.0.0",
+  "description": "flex with less effort",
+  "main": "flex.less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simple-flex/flexless.git"
+  },
+  "author": "Damian Martyniak <rascada>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simple-flex/flexless/issues"
+  },
+  "homepage": "https://github.com/simple-flex/flexless#readme"
+}

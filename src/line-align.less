@@ -1,0 +1,6 @@
+.line-align(@l) when (@l = start) { align-content: flex-start; }
+.line-align(@l) when (@l = end) { align-content: flex-end; }
+.line-align(@l) when (@l = center) { align-content: center; }
+.line-align(@l) when (@l = between) { align-content: space-between; }
+.line-align(@l) when (@l = around) { align-content: space-around; }
+.line-align(@l) when (@l = stretch) { align-content: stretch; }
